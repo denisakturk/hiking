@@ -1,0 +1,76 @@
+@media screen and (max-width: 1200px) {
+  .container { max-width: 970px; }
+  .main-title { font-size: 4.3rem; }
+
+  .promo {
+    &-item {
+      &__title { font-size: 2.8rem; }
+      &__text { font-size: 1.4rem; }
+
+      &__btn {
+        padding: 1.3rem 3.2rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container { max-width: 750px; }
+  .navbar-menu { display: none; }
+
+  .main-title {
+    font-size: 3.5rem;
+    &__sub { font-size: 1.2rem; }
+  }
+
+  .promo {
+    &-item {
+      &__title { font-size: 2.2rem; }
+      &__text { font-size: 1.3rem; }
+
+      &__btn {
+        padding: 1.2rem 2.8rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    &-item {
+      &__title { font-size: 1.8rem; }
+      &__text { font-size: 1rem; }
+
+      &__btn {
+        padding: 1rem 2.2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .promo {
+    &-list {
+      grid-template-areas: 'left-img' 'right-text' 'right-img' 'left-text';
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: 1fr;
+    }
+
+    &-item {
+      &_right-text,
+      &_left-text { padding: 1.5rem; }
+      &__wrapper { text-align: center; }
+      &__title { font-size: 2.8rem; }
+      &__text { font-size: 1.4rem; }
+
+      &__btn {
+        padding: 1.3rem 3.2rem;
+        margin: 0 auto;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
