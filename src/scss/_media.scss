@@ -1,3 +1,14 @@
+@media screen and (max-width: 1440px) {
+  .explore {
+    // &-hero { padding-right: 2.5rem; }
+
+    // &-title {
+    //   font-size: 3.4rem;
+    //   & span { font-size: 1em; }
+    // }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .container { max-width: 970px; }
   .main-title { font-size: 4.3rem; }
@@ -12,6 +23,10 @@
         font-size: 1.3rem;
       }
     }
+  }
+
+  .explore-title {
+    font-size: 3.3rem;
   }
 }
 
@@ -35,6 +50,10 @@
       }
     }
   }
+
+  .explore-title {
+    & span { font-size: 1.3em; }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -47,6 +66,16 @@
         padding: 1rem 2.2rem;
         font-size: 1rem;
       }
+    }
+  }
+
+  .explore {
+    background-position: 72% center;
+    &-hero { padding-right: 15px; }
+
+    &-title {
+      font-size: 3rem;
+      & span { font-size: 1.1em; }
     }
   }
 }
