@@ -114,7 +114,7 @@ gulp.task('watch', function() {
     gulp.watch('src/scss/**/*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами
     gulp.watch('src/*.pug', gulp.parallel('pug'));
     gulp.watch('src/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
-    gulp.watch(['src/scripts/main.js', 'src/slibs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
+    gulp.watch(['src/scripts/main.js', 'src/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 
 gulp.task('default', gulp.parallel('pug', 'sass', 'scripts',  'lint-css', 'browser-sync', 'watch')); // + css-libs scripts
