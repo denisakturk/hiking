@@ -203,7 +203,7 @@ main { overflow: hidden; }
 
 .go {
   position: relative;
-  padding: 139px 0 183px 0;
+  padding: 6rem 0 9rem 0;
   &__title { text-align: center; }
 
   &__text {
@@ -219,16 +219,12 @@ main { overflow: hidden; }
 
   &-article {
     max-width: 340px;
-    margin-bottom: 55px;
+    margin-bottom: 3rem;
     color: #fff;
     background-color: #7f7770;
 
     &:not(:last-child) { margin-right: 5rem; }
-
-    &__img {
-      display: block;
-    }
-
+    &__img { display: block; }
     &__desc { padding: 3rem 1rem; }
 
     &__title {
@@ -449,32 +445,6 @@ main { overflow: hidden; }
 .infos {
   position: relative;
   padding-top: 176px;
-
-  &-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10rem;
-  }
-
-  &-article {
-    max-width: 332px;
-    &:not(:last-child) { margin-right: 4rem; }
-
-    &__title {
-      margin-bottom: 28px;
-      font-size: 33px;
-      font-weight: 700;
-      color: #deb37e;
-      text-transform: capitalize;
-    }
-
-    &__text {
-      font-size: 19px;
-      font-weight: 600;
-      color: #333d42;
-    }
-  }
 
   &-cite {
     max-width: 800px;

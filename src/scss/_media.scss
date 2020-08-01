@@ -42,8 +42,12 @@
     &__sub { font-size: 1.2rem; }
   }
 
-  .go-list { flex-direction: column; }
-  .go-article:not(:last-child) { margin-right: 0; }
+  .go-article {
+    &:not(:last-child) { margin-right: 1rem; }
+    &__desc { padding: 1rem; }
+    &__title { font-size: 1.5rem; }
+    &__text { font-size: 1.2rem; }
+  }
 
   .promo {
     &-item {
@@ -58,16 +62,6 @@
   }
 
   .explore-title { & span { font-size: 1.3em; } }
-
-  .infos-list {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .infos-article:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
 
   .ftr {
     &__inner {
@@ -95,6 +89,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .go-list { flex-direction: column; }
+
+  .go-article {
+    &__desc { padding: 3rem 1rem; }
+    &__title { font-size: 1.7rem; }
+    &__text { font-size: 1.5rem; }
+  }
+  .go-article:not(:last-child) { margin-right: 0; }
+
   .promo {
     &-item {
       &__title { font-size: 1.8rem; }
@@ -107,18 +110,86 @@
     }
   }
 
+  // .explore {
+  //   background-position: 72% center;
+  //   &-hero { padding-right: 15px; }
+
+  //   &-title {
+  //     font-size: 3rem;
+  //     & span { font-size: 1.1em; }
+  //   }
+  // }
+
   .explore {
-    background-position: 72% center;
-    &-hero { padding-right: 15px; }
+    background-size: cover;
+
+    &-shape {
+      top: -40px;
+      height: 140px;
+
+      &_bottom {
+        bottom: -80px;
+        height: 140px;
+      }
+    }
 
     &-title {
       font-size: 3rem;
+
       & span { font-size: 1.1em; }
     }
   }
 }
 
 @media screen and (max-width: 650px) {
+  .section-title {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .text { font-size: 1.5rem; }
+
+  .go__text { margin-bottom: 2rem; }
+  .hero { background-position: 40% 50%; }
+  .main-title { font-size: 3rem; }
+
+  .promo {
+    &-item {
+      &_right-text,
+      &_left-text { padding: 1rem; }
+      &__wrapper { justify-content: space-evenly; }
+
+      &__title {
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+      }
+
+      &__text {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+      }
+
+      &__btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .mount {
+    padding-top: 140px;
+    &-shape { height: 140px; }
+  }
+
+  .explore-title {
+    font-size: 2.4rem;
+    & span { font-size: 1em; }
+  }
+
+  .infos { padding-top: 80px; }
+}
+
+@media screen and (max-width: 480px) {
   .promo {
     &-list {
       grid-template-areas: 'left-img' 'right-text' 'right-img' 'left-text';
