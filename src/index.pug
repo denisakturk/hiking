@@ -39,21 +39,21 @@ html
           h2.section-title.go__title Let's go
           p.text.go__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
           .go-list
-            article.article
-              img.article__img(src="./img/article-img.png", alt="")
-              .article__desc
-                h3.article__title Lorem ipsum
-                p.text.article__text Lorem ipsum dolor sit amet, consectetur  adipisicing...
-            article.article
-              img.article__img(src="./img/article-img2.png", alt="")
-              .article__desc
-                h3.article__title Lorem ipsum
-                p.text.article__text Lorem ipsum dolor sit amet, consectetur  adipisicing...
-            article.article
-              img.article__img(src="./img/article-img3.png", alt="")
-              .article__desc
-                h3.article__title Lorem ipsum
-                p.text.article__text Lorem ipsum dolor sit amet, consectetur  adipisicing...
+            article.go-article
+              img.go-article__img(src="./img/article-img.png", alt="")
+              .go-article__desc
+                h3.go-article__title Lorem ipsum
+                p.text.go-article__text Lorem ipsum dolor sit amet, consectetur  adipisicing...
+            article.go-article
+              img.go-article__img(src="./img/article-img2.png", alt="")
+              .go-article__desc
+                h3.go-article__title Lorem ipsum
+                p.text.go-article__text Lorem ipsum dolor sit amet, consectetur  adipisicing...
+            article.go-article
+              img.go-article__img(src="./img/article-img3.png", alt="")
+              .go-article__desc
+                h3.go-article__title Lorem ipsum
+                p.text.go-article__text Lorem ipsum dolor sit amet, consectetur  adipisicing...
           a.btn.btn_gray.go__btn Show More
           .flower-shadow
       section.promo#promo
@@ -89,42 +89,37 @@ html
           h1.explore-title EXPLORE
             span THE WORLD
         .explore-shape_bottom
-        //- .container
-        //-   .explore-list
-        //-     article.explore-article
-        //-       h3.explore-article__title lorem ipsum
-        //-       p.text.explore-article__text Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne  ullamco laboris nisi ut aliqolore.
-        //-     article.explore-article
-        //-       h3.explore-article__title lorem ipsum
-        //-       p.text.explore-article__text Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne  ullamco laboris nisi ut aliqolore.
-        //-     article.explore-article
-        //-       h3.explore-article__title lorem ipsum
-        //-       p.text.explore-article__text Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne  ullamco laboris nisi ut aliqolore.
-        //-   .explore-slider
-        //-     .slider-item
-        //-       .cite
-        //-       p.text.slider-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-        //-       h3.slider-item__title Lorem Ipsum
-        //-     .slider-item
-        //-       .cite
-        //-       p.text.slider-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-        //-       h3.slider-item__title Lorem Ipsum
-        //-     .slider-item
-        //-       .cite
-        //-       p.text.slider-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-        //-       h3.slider-item__title Lorem Ipsum
+      section.infos
+        .container
+          .infos-list
+            article.infos-article
+              h3.infos-article__title lorem ipsum
+              p.text.infos-article__text Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne  ullamco laboris nisi ut aliqolore.
+            article.infos-article
+              h3.infos-article__title lorem ipsum
+              p.text.infos-article__text Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne  ullamco laboris nisi ut aliqolore.
+            article.infos-article
+              h3.infos-article__title lorem ipsum
+              p.text.infos-article__text Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne  ullamco laboris nisi ut aliqolore.
+          .infos-cite
+            .infos-cite__logo
+            p.text.infos-cite__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+            h3.infos-cite__title Lorem Ipsum
+          .flower-shadow.infos__shadow
+        .infos-shape
       section.contact
         .container
-          h2.section-title.contact__title Title Here
-          p.text.contact__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
-          form.contact-form
-            input(type="text" placeholder="Your Email")
-            button.btn.btn_gray Subscribe
-        .shape
+          .contact__inner
+            h2.section-title.contact__title Title Here
+            p.text.contact__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+            form.contact-form
+              input(type="text" placeholder="Your Email")
+              button.btn.btn_gray Subscribe  
     footer.ftr
-      .container
+      .ftr-shape
+      .ftr-container
         .ftr__inner
-          div
+          .ftr-info
             h3.ftr-title Title Here
             p.text.ftr__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. 
             .ftr-socials

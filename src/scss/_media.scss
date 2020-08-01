@@ -1,13 +1,8 @@
-@media screen and (max-width: 1440px) {
-  .explore {
-    // &-hero { padding-right: 2.5rem; }
+// @media screen and (min-width: 1440px) {
+//   // .explore-shape_bottom {
 
-    // &-title {
-    //   font-size: 3.4rem;
-    //   & span { font-size: 1em; }
-    // }
-  }
-}
+//   // }
+// }
 
 @media screen and (max-width: 1200px) {
   .container { max-width: 970px; }
@@ -39,6 +34,14 @@
     &__sub { font-size: 1.2rem; }
   }
 
+  .go-list {
+    flex-direction: column;
+  }
+
+  .go-article:not(:last-child) {
+    margin-right: 0;
+  }
+
   .promo {
     &-item {
       &__title { font-size: 2.2rem; }
@@ -53,6 +56,40 @@
 
   .explore-title {
     & span { font-size: 1.3em; }
+  }
+
+  .infos-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .infos-article:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .ftr {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-info {
+      max-width: 100%;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    &-socials {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    &-navbar {
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 }
 
