@@ -159,7 +159,8 @@ main {
     background-color: #e2a355; }
 
 .hdr {
-  padding: 10px 0 0 0; }
+  padding: 0.8rem 0;
+  background-color: white; }
 
 .navbar {
   display: -webkit-box;
@@ -776,7 +777,7 @@ main {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 3rem; }
+    padding: 2rem; }
   .ftr-info {
     max-width: 100%;
     margin-bottom: 2rem;
@@ -790,7 +791,7 @@ main {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
   .ftr-navbar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -887,7 +888,26 @@ main {
       .explore-title span {
         font-size: 1em; }
   .infos {
-    padding-top: 80px; } }
+    padding-top: 80px; }
+  .contact-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .contact-form input {
+      padding: 1rem 0 1rem 1rem;
+      margin-bottom: 1rem; }
+    .contact-form button {
+      position: static;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      padding: 1rem 2.5rem; } }
 
 @media screen and (max-width: 480px) {
   .promo-list {

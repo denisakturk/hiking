@@ -79,7 +79,10 @@ main { overflow: hidden; }
   &_gold { background-color: $yellow; }
 }
 
-.hdr { padding: 10px 0 0 0; }
+.hdr {
+  padding: 0.8rem 0;
+  background-color: white;
+}
 
 .navbar {
   display: flex;

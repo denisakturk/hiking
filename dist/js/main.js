@@ -1,5 +1,4 @@
-heightSetter();
-window.addEventListener('resize', heightSetter);
+window.addEventListener('load', heightSetter);
 function heightSetter() {
   document.getElementById("hero").style.height = window.innerHeight  + 'px';
   document.getElementById("explore").style.height =  window.innerHeight  + 'px';
