@@ -174,7 +174,21 @@ main { overflow: hidden; }
 .intro {
   flex: 1;
 
-  &__container { padding: 0 30px; }
+  &__container {
+    position: relative;
+    padding: 0 30px;
+
+    &::after {
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to top, rgba(52, 52, 52, 0.7) 0%, rgba(67, 64, 55, 0.47) 100%);
+    }
+  }
 
   &-content {
     display: flex;
@@ -187,8 +201,14 @@ main { overflow: hidden; }
 
   &__btn {
     display: inline-block;
-    padding: 13px 36px;
+    padding: 1rem 1.5rem;
     margin-bottom: 26px;
+    transition: 1s ease-in;
+
+    &:hover {
+      color: white;
+      background-color: $yellow;
+    }
   }
 
   &__text {
@@ -244,6 +264,8 @@ main { overflow: hidden; }
   &__btn {
     padding: 1rem 3rem;
     margin: 0 auto;
+    transition: 0.3s ease-in;
+    &:hover { background-color: $yellow; }
   }
 }
 
@@ -403,7 +425,7 @@ main { overflow: hidden; }
 
     &_bottom {
       position: absolute;
-      bottom: -176px;
+      bottom: -166px;
       z-index: 1;
       width: 100%;
       height: 211px;
@@ -534,7 +556,7 @@ main { overflow: hidden; }
 
     & input {
       width: 100%;
-      padding: 23px 0 23px 36px;
+      padding: 2rem 0 2rem 2rem;
       border: 0;
       border-radius: 40px;
     }
