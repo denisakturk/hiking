@@ -267,12 +267,6 @@ main {
   .intro__container {
     position: relative;
     padding: 0 30px; }
-    .intro__container::after {
-      width: 100%;
-      height: 100%;
-      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(52, 52, 52, 0.7)), to(rgba(67, 64, 55, 0.47)));
-      background-image: -o-linear-gradient(bottom, rgba(52, 52, 52, 0.7) 0%, rgba(67, 64, 55, 0.47) 100%);
-      background-image: linear-gradient(to top, rgba(52, 52, 52, 0.7) 0%, rgba(67, 64, 55, 0.47) 100%); }
   .intro-content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -781,7 +775,8 @@ main {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 3rem; }
   .ftr-info {
     max-width: 100%;
     margin-bottom: 2rem;
@@ -797,11 +792,22 @@ main {
             justify-content: center;
     margin-bottom: 1rem; }
   .ftr-navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%; } }
+    width: 100%; }
+    .ftr-navbar__col:not(:last-child) {
+      margin: 0 0 2rem 0; } }
 
 @media screen and (max-width: 768px) {
   .go-list {
@@ -870,10 +876,16 @@ main {
     padding-top: 140px; }
     .mount-shape {
       height: 140px; }
-  .explore-title {
-    font-size: 2.4rem; }
-    .explore-title span {
-      font-size: 1em; }
+  .explore {
+    background-position: 60% 50%; }
+    .explore-hero {
+      display: block;
+      padding-top: 180px;
+      margin: 0 auto; }
+    .explore-title {
+      font-size: 3.4rem; }
+      .explore-title span {
+        font-size: 1em; }
   .infos {
     padding-top: 80px; } }
 
