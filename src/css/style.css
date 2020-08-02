@@ -159,8 +159,7 @@ main {
     background-color: #e2a355; }
 
 .hdr {
-  padding: 0.8rem 0;
-  background-color: white; }
+  padding: 0.8rem 0; }
 
 .navbar {
   display: -webkit-box;
@@ -910,6 +909,8 @@ main {
       padding: 1rem 2.5rem; } }
 
 @media screen and (max-width: 480px) {
+  .main-title {
+    font-size: 2.8rem; }
   .promo-list {
     grid-template-areas: 'left-img' 'right-text' 'right-img' 'left-text';
     grid-template-rows: repeat(4, 1fr);
